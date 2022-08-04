@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+body {
+  display: grid;
+  place-items: center;
+
+  padding-block: 4rem;
+  
+  font-family: var(--ff-body);
+  background-color: var(--bg-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-400);
+}
