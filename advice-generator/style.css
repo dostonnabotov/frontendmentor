@@ -26,21 +26,20 @@
  * Reset
 ============== */
 *,
-*::before
+*::before,
 *::after {
   box-sizing: border-box;
 }
 
 * {
-  font: inherit;
   margin: 0;
   padding: 0;
+  font: inherit;
 }
 
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 img,
@@ -56,6 +55,7 @@ html {
   font-family: var(--ff-body);
   font-size: var(--fs-400);
   font-weight: var(--fw-xbold);
+  line-height: 1.5;
 }
 
 body {
@@ -110,7 +110,6 @@ button:active,
 .btn:active {
   opacity: .7;
 }
-
 
 /* card
 ============== */

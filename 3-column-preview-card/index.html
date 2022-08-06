@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | 3 Column Preview Card</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- custom js -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="cards | grid">
+        <div class="card | grid flow" style="--clr-card: var(--clr-secondary)">
+          <img src="./assets/images/icon-sedans.svg" alt="" aria-hidden="true" />
+          <h2 class="card__title">Sedans</h2>
+          <p class="card__content">
+            Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
+            the city or on your next road trip.
+          </p>
+          <button class="btn | card__link">Learn More</button>
+        </div>
+
+        <div class="card | grid flow" style="--clr-card: var(--clr-primary-600)">
+          <img src="./assets/images/icon-suvs.svg" alt="" aria-hidden="true" />
+          <h2 class="card__title">SUVs</h2>
+          <p class="card__content">
+            Take an SUV for its spacious interior, power, and versatility. Perfect for your next
+            family vacation and off-road adventures.
+          </p>
+          <button class="btn | card__link">Learn More</button>
+        </div>
+
+        <div class="card | grid flow" style="--clr-card: var(--clr-primary-800)">
+          <img src="./assets/images/icon-luxury.svg" alt="" aria-hidden="true" />
+          <h2 class="card__title">Luxury</h2>
+          <p class="card__content">
+            Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of
+            a luxury rental and arrive in style.
+          </p>
+          <button class="btn | card__link">Learn More</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

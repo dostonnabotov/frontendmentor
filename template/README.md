@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![/*CHALLENGE*/](./assets/screenshots//*SCREENSHOT*/.png)
+![/*CHALLENGE*/](./assets/screenshots/screenshot.png)
 
 ### Links
 
@@ -67,8 +67,6 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 ### Continued development
 
@@ -78,12 +76,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Website - [Doston Nabotov](https://www.dostonnabotov.netlify.com)
-- Frontend Mentor - [@dostonnabotov](https://www.frontendmentor.io/profile/dostonnabotov)
-- Twitter - [@dostonnabotov](https://www.twitter.com/doston_nabotov)
 
 ## Acknowledgments
 

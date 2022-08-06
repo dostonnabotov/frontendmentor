@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice Generator
+# Frontend Mentor - Advice Generator App
 
 ## Table of contents
 
@@ -10,11 +10,10 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
-This is a solution to the [Advice Generator](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) on Frontend Mentor.
+This is a solution to the [Advice Generator App](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) on Frontend Mentor.
 
 ### The challenge
 
@@ -24,11 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Advice Generator](./assets/screenshots/screenshot.png)
+![Advice Generator App](./assets/screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL -  [GitHub repository](/*GITHUB URL*/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/advice-generator/)
 - Live Preview URL - [Live Site](/*LIVE PREVIEW URL*/)
 
 ## My process
@@ -41,8 +40,6 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 Here are some things I learned and am proud of:
 
@@ -63,9 +60,3 @@ Here are some things I learned and am proud of:
 ### Useful resources
 
 - [source and picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source) - A great way to set different images depending on different screen resolutions.
-
-## Author
-
-- Website - [Doston Nabotov](https://www.dostonnabotov.netlify.com)
-- Frontend Mentor - [@dostonnabotov](https://www.frontendmentor.io/profile/dostonnabotov)
-- Twitter - [@dostonnabotov](https://www.twitter.com/doston_nabotov)
