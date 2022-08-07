@@ -5,8 +5,8 @@
 - [3 column preview card](https://dostonnabotov.github.io/frontendmentor/3-column-preview-card/)
 - [4 card feature section](https://dostonnabotov.github.io/frontendmentor/4-card-feature-section/)
 - [advice generator app](https://dostonnabotov.github.io/frontendmentor/advice-generator/)
-- [interative pricing component](https://dostonnabotov.github.io/frontendmentor/interative-pricing-component/)
-- [interative rating component](https://dostonnabotov.github.io/frontendmentor/interative-rating-component/)
+- [interactive pricing component](https://dostonnabotov.github.io/frontendmentor/interactive-pricing-component/)
+- [interactive rating component](https://dostonnabotov.github.io/frontendmentor/interactive-rating-component/)
 
 ## Author
 
