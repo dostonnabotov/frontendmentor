@@ -1,0 +1,17 @@
+@use "../abstract/variables" as *;
+
+ul {
+  --flow-spacer: 1rem;
+  list-style-image: url("../images/icon-check.svg");
+  padding: 0;
+
+  & > li {
+    width: fit-content;
+    padding-left: 1rem;
+    margin-inline: auto;
+    
+    @include md {
+      margin-left: 2rem;
+    }
+  }
+}

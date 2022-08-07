@@ -1,0 +1,23 @@
+$clr-primary: hsl(174, 77%, 80%);
+$bg-primary: hsl(174, 86%, 45%);
+
+$neutral-100: hsl(0, 0%, 100%);
+$neutral-200: hsl(230, 100%, 99%);
+$neutral-300: hsl(223, 50%, 87%);
+$neutral-400: hsl(226, 10%, 32%);
+$neutral-700: hsl(227, 25%, 22%);
+
+$fs-400: 0.9375rem; // 15px
+$fs-700: clamp(1.1rem, 3vw, 2rem);
+$fs-900: clamp(2rem, 8vw, 3rem);
+
+$fw-400: 600;
+$fw-700: 800;
+
+$breakpoint: 50em;
+
+@mixin md() {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

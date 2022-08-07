@@ -1,0 +1,41 @@
+@use '../abstract/variables' as *;
+
+.toggle {
+  --_gap: 0.3em;
+  --_width: 35%;
+  display: inline-block;
+  position: relative;
+  width: 66px;
+  height: 30px;
+
+  background-color: $neutral-400;
+  border-radius: 20em;
+  cursor: pointer;
+
+  &:is(:hover, :focus) {
+    background-color: $bg-primary;
+  }
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: var(--_gap);
+  bottom: var(--_gap);
+  left: var(--_gap);
+  right: auto;
+
+  width: var(--_width);
+  background-color: $neutral-100;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked ~ .toggle {
+  background-color: $bg-primary;
+
+  /* when checkbox is checked, toggle the circle to the right side */
+  &::before {
+    right: var(--_gap);
+    left: auto;
+  }
+}

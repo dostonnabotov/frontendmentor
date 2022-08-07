@@ -1,0 +1,101 @@
+@use "../abstract/variables" as *;
+
+/**
+* C - Composition
+* U - Utility
+* B - Block
+* E - Exception
+**/
+
+/* =============
+  Composition
+============= */
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.custom-flex {
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $breakpoint) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* =============
+  Utility
+============= */
+.fs-900 { font-size: $fs-900; }
+.fs-700 { font-size: $fs-700; }
+
+.fw-700 { font-weight: $fw-700; }
+
+.text-dark { color: $neutral-700; }
+
+.text-center { text-align: center; }
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =============
+  Block
+============= */
+.header {
+  --flow-spacer: 0.5rem;
+  padding-block: max(4rem, 10vh);
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
+
+  background-image: url("/images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(224, 65%, 95%);
+
+  border-bottom-left-radius: 10em;
+
+  & p span {
+    display: block;
+
+    @include md {
+      display: inline;
+    }
+  }
+}
+
+.card {
+  --flow-spacer: 2rem;
+  width: min(100% - 2rem, 40rem);
+
+  margin-inline: auto;
+  padding: 2em;
+  text-align: center;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+
+  background-color: $neutral-100;
+  border-radius: 1em;
+  /* reference: https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: 0px 8px 15px rgba(149, 157, 165, 0.2);
+
+  &__billing {
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
+
+/* =============
+  Exceptions
+============= */
+.price-per-period {
+  --gap: 0.3rem;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+@use '../abstract/variables' as *;
+
+.btn {
+  --clr-cta: hsl(226, 100%, 87%);
+  --bg-cta: hsl(227, 35%, 25%);
+  width: 15em;
+  height: fit-content;
+
+  padding: 1em;
+  font-weight: $fw-700;
+
+  
+  /* for link */
+  display: inline-block;
+  text-decoration: none;
+  
+  border: 0;
+  border-radius: 20em;
+  cursor: pointer;
+  
+  &--primary {
+    background-color: var(--bg-cta);
+    color: var(--clr-cta);
+
+    &:is(:hover, :focus) {
+      color: $neutral-200;
+    }
+  }
+
+  &:active { transform: scale(0.97); }
+}
+

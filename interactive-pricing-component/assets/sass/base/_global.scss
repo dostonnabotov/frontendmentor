@@ -1,0 +1,12 @@
+@use '../abstract/variables' as *;
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: $fs-400;
+  font-weight: $fw-400;
+}
+
+body {
+  background-color: hsl(230, 100%, 99%);
+  color: $neutral-400;
+}

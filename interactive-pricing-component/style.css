@@ -1,0 +1,84 @@
+/* =============
+ * Root
+============== */
+:root {
+  --css: "variables";
+}
+
+/* =============
+ * Reset
+============== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =============
+ * Global
+============== */
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* =============
+ * Composition
+============== */
+.container {
+  width: min(100% - 1rem, 56.25rem);
+  margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* =============
+ * Utilities
+============== */
+
+
+/* =============
+ * Block
+============== */
+
+
+/* =============
+ * Exceptions
+============== */

@@ -1,0 +1,217 @@
+/* ==========
+    Root 
+=========== */
+:root {
+    --clr-primary: 25 97% 53%;
+
+    --neutral-100: 0 0% 100%;
+    --neutral-200: 217 12% 63%;
+    --neutral-400: 216 12% 54%;
+    --neutral-800: 213 19% 18%;
+    --neutral-900: 216 12% 8%;
+
+    --fs-400: 0.9375rem; /* 15px */
+    --fs-700: 2rem;
+
+    --ff-body: 'Overpass', sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/* ==========
+    Reset 
+=========== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* ==========
+    Global 
+=========== */
+html {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1.6;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+
+    background-color: hsl( var(--neutral-900) );
+    color: hsl( var(--neutral-400) );
+}
+
+/* ==============
+    Composition 
+================= */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 1rem);
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* ============
+    Utility 
+============= */
+.fs-700 { font-size: var(--fs-700); }
+
+.fw-700 { font-weight: var(--fw-700); }
+
+.text-center { text-align: center; }
+
+.text-primary { color: hsl( var(--clr-primary) ); }
+.text-white { color: hsl( var(--neutral-100) ); }
+
+.bg-primary { background-color: hsl( var(--clr-primary) ); }
+.bg-neutral-200 { background-color: hsl( var(--neutral-200) / .1); }
+.bg-neutral-800 { background-color: hsl( var(--neutral-800) ); }
+.bg-neutral-900 { background-color: hsl( var(--neutral-900) ); }
+
+
+/* ============
+    Block 
+============= */
+/* card */
+.card {
+    width: min(100% - 2rem, 26rem);
+    padding: 2rem;
+    border-radius: 1em;
+}
+
+/* card--thank-you */
+.card__selection {
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5rem 1rem;
+    border-radius: 1.5em;
+}
+/* /card--thank-you */
+
+/* card--rating */
+.card__img {
+    width: fit-content;
+    padding: .7em;
+    border-radius: 50%;
+}
+
+.card__rating {
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.rating__score {
+    --_size: 3.2rem;
+    display: block;
+    width: var(--_size);
+    height: var(--_size);
+    text-align: center;
+
+    background-color: hsl( var(--neutral-200) / .1);
+    border-radius: 50%;
+    cursor: pointer;
+
+    /* to center the text vertically. Got from stackoverflow */
+    line-height: calc(var(--_size) + 2px);
+}
+
+.rating__score:hover {
+    background-color: hsl( var(--clr-primary) );
+    color: hsl( var(--neutral-100) );
+}
+
+/*
+[1] - setting `display: none` remove from DOM,
+    and cannot be accessed through keyboard navigation,
+    which is not good for a11y
+    Therefore, I am setting position absolute to not 
+    to make the layout breaks. 
+[2] - tried to use `visibility: hidden`, but,
+    it also cannot be accessed through keyboard keys,
+    and it takes up space as well
+    So, `opacity: 0` will make it disappear
+*/
+
+input[type="radio"] { 
+    position: absolute; /* [1] */
+    opacity: 0;  /* [2] */
+}
+
+input[type="radio"]:is(:focus, :checked) ~ .rating__score {
+    background-color: hsl( var(--neutral-400) );
+    color: hsl( var(--neutral-100) );
+}
+/* /card--rating */
+
+.btn {
+    padding: 1.5em 2em;
+    vertical-align: middle;
+
+
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+
+    /* for link */
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* button | active state */
+button:active,
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn[data-type="primary"] {
+    background-color: hsl( var(--clr-primary) );
+    color: hsl( var(--neutral-100) );
+}
+
+.btn[data-type="primary"]:is(:hover, :focus-visible) {
+    background-color: hsl( var(--neutral-100) );
+    color: hsl( var(--clr-primary) );
+}
+
+/* ==============
+    Exceptions 
+=============== */
+.hide { display: none; }
+
+/* Reference: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034 */
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    border: 0;
+    white-space: nowrap;
+}
