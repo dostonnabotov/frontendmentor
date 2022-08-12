@@ -2,11 +2,15 @@
 
 ## Links
 
-- [3 column preview card](https://dostonnabotov.github.io/frontendmentor/3-column-preview-card/)
-- [4 card feature section](https://dostonnabotov.github.io/frontendmentor/4-card-feature-section/)
+- [social media dashboard](https://dostonnabotov.github.io/frontendmentor/social-media-dashboard/)
 - [advice generator app](https://dostonnabotov.github.io/frontendmentor/advice-generator/)
-- [interactive pricing component](https://dostonnabotov.github.io/frontendmentor/interactive-pricing-component/)
+- [4 card feature section](https://dostonnabotov.github.io/frontendmentor/4-card-feature-section/)
 - [interactive rating component](https://dostonnabotov.github.io/frontendmentor/interactive-rating-component/)
+- [interactive pricing component](https://dostonnabotov.github.io/frontendmentor/interactive-pricing-component/)
+- [social proof section](https://dostonnabotov.github.io/frontendmentor/social-proof-section/)
+- [stats-preview-card-component](https://dostonnabotov.github.io/frontendmentor/stats-preview-card-component/)
+- [3 column preview card](https://dostonnabotov.github.io/frontendmentor/3-column-preview-card/)
+- [nft preview card component](https://dostonnabotov.github.io/frontendmentor/nft-preview-card-component/)
 
 ## Author
 
