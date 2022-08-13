@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/3-column-preview-card)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/3-column-preview-card/)
 
 ## My process
 

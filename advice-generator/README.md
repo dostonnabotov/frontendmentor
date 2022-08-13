@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/advice-generator/)
-- Live Preview URL - [Live Site](/*LIVE PREVIEW URL*/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/advice-generator)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/advice-generator/)
 
 ## My process
 

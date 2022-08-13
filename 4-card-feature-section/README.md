@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/4-card-feature-section)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/4-card-feature-section/)
 
 ## My process
 

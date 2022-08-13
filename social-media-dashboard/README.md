@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/social-media-dashboard)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/social-media-dashboard/)
 
 ## My process
 

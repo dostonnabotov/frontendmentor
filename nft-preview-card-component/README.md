@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/nft-preview-card-component)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/nft-preview-card-component/)
 
 ## My process
 

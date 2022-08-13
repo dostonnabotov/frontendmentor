@@ -9,7 +9,7 @@
 - [My process](#my-process)
   - [Built with](#built-with)
 
-This is a solution to the [Social Proof Section](https://www.frontendmentor.io/challenges//*CHALLENGE-LINK*/) on Frontend Mentor.
+This is a solution to the [Social Proof Section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) on Frontend Mentor.
 
 ## Overview
 
@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/social-proof-section)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/social-proof-section/)
 
 ## My process
 

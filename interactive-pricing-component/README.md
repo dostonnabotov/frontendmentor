@@ -36,8 +36,8 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Links
 
-- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/)
-- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/)
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/frontendmentor/tree/main/interactive-pricing-component)
+- Live Preview URL - [Live Site](https://dostonnabotov.github.io/frontendmentor/interactive-pricing-component/)
 
 ## My process
 
