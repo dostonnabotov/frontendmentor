@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- custom js -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card | even-columns">
+          <div class="card__img">
+            <div class="front-card">
+              <img src="./assets/images/card-logo.svg" alt="" />
+              <p class="front-card__number">1234 5678 9123 0000</p>
+              <div class="flex" style="justify-content: space-between">
+                <p class="front-card__name">Jane Appleseed</p>
+                <p class="front-card__date">09/00</p>
+              </div>
+            </div>
+            <div class="back-card">
+              <p>000</p>
+            </div>
+          </div>
+          <div class="card__form">
+            <form class="grid">
+              <div class="input-group">
+                <label for="name">Cardholder Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Jane Appleseed"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="number">Card Number</label>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  autocomplete="off"
+                  pattern="[0-9]{16}"
+                />
+                <p class="input-group__message">Wrong format, numbers only</p>
+              </div>
+              <div class="flex">
+                <div class="input-group">
+                  <label for="month">Exp. Date (MM/YY)</label>
+                  <div class="flex">
+                    <input
+                      type="text"
+                      name="month"
+                      id="month"
+                      placeholder="MM"
+                      autocomplete="off"
+                      style="width: 4rem"
+                    />
+                    <input
+                      type="text"
+                      name="year"
+                      id="year"
+                      placeholder="YY"
+                      autocomplete="off"
+                      style="width: 4rem"
+                    />
+                  </div>
+                  <p class="input-group__message">Can't be blank</p>
+                </div>
+                <div class="input-group">
+                  <label for="cvc">CVC</label>
+                  <input
+                    type="text"
+                    name="cvc"
+                    id="cvc"
+                    placeholder="e.g. 123"
+                    autocomplete="off"
+                  />
+                  <p class="input-group__message">Can't be blank</p>
+                </div>
+              </div>
+              <button type="submit" class="btn">Confirm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Completed state start -->
+
+    <!-- Thank you! We've added your card details Continue -->
+  </body>
+</html>
