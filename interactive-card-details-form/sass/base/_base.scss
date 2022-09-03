@@ -1,0 +1,20 @@
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  max-width: 45ch;
+}
+
+p,
+li {
+  max-width: 65ch;
+}
+
+main {
+  padding-block: var(--size-800);
+}

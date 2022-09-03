@@ -1,0 +1,97 @@
+@use "../abstracts" as *;
+
+.cta-container {
+  --region-space: var(--size-400);
+  transform: translateY(30%);
+  z-index: 10;
+}
+
+.cta {
+  --flow-space: var(--size-500);
+  width: min(100%, 50rem);
+  margin-inline: auto;
+  padding: var(--size-800);
+
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-700);
+  box-shadow: 3px 3px 3px 2px rgb(0, 0, 0, 0.15);
+}
+
+.cta__input-group {
+  align-items: center;
+
+  @include mq("md") {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.cta__email-submit {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.cta__form:valid .cta__email-submit {
+  opacity: 1;
+  pointer-events: initial;
+  cursor: pointer;
+}
+
+.cta__email-input {
+  --default: var(--clr-neutral-400);
+  --invalid: var(--clr-danger-400);
+  --valid: hsl(130 52% 46%);
+  --focus: hsl(39, 100%, 50%);
+
+  padding: 0.6em 2em;
+  border: 2px solid var(--color, var(--default));
+
+  &:focus-visible {
+    outline-color: var(--color);
+    outline-offset: 3px;
+  }
+
+  &:invalid {
+    --color: var(--invalid);
+  }
+
+  &:invalid:not(:focus) {
+    animation: shake 0.5s;
+  }
+
+  &:focus {
+    --color: var(--focus);
+  }
+
+  &:valid {
+    --color: var(--valid);
+  }
+
+  &:placeholder-shown {
+    --color: var(--default);
+  }
+
+  &:placeholder-shown:not(:focus) {
+    animation: none;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-2%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(2%);
+  }
+}

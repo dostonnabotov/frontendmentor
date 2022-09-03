@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-group label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 0.25em 0.5em;
+  border: 0;
+  outline: 1px solid var(--clr-neutral-200);
+}

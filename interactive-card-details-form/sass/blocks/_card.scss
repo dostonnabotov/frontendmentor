@@ -1,0 +1,98 @@
+@use "../abstracts" as *;
+
+.cards {
+  --gap: 2rem;
+  width: 100%;
+  position: relative;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 4fr 3fr 4fr;
+  zoom: 80%;
+
+  @include mq("md") {
+    grid-template-rows: auto;
+    zoom: 100%;
+  }
+}
+
+.card {
+  --_card-height: 12rem;
+  --_card-width: 20rem;
+  margin-inline: auto;
+  width: var(--_card-width);
+  height: var(--_card-height);
+  color: var(--clr-neutral-100);
+  border-radius: 1rem;
+  padding-inline: var(--size-600);
+  padding-block: var(--size-600);
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include mq("sm") {
+    --_card-height: 16rem;
+    --_card-width: 30rem;
+  }
+}
+
+.card--front {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  z-index: 1;
+
+  &::before {
+    background-image: url("/assets/images/bg-card-front.png");
+  }
+
+  @include mq("md") {
+    grid-row: 1;
+  }
+}
+
+.card--back {
+  padding-block-start: 5.2rem;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+
+  &::before {
+    background-position: center;
+    overflow: hidden;
+    background-image: url("/assets/images/bg-card-back.png");
+  }
+
+  @include mq("sm") {
+    padding-block-start: 7rem;
+    padding-inline: var(--size-900);
+  }
+
+  @include mq("md") {
+    grid-row: 2;
+  }
+}
+
+.card--back p {
+  text-align: end;
+}
+
+.card__front-body {
+  align-self: end;
+}
+
+.card__front-info {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__front-number {
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
+  line-height: 1;
+}

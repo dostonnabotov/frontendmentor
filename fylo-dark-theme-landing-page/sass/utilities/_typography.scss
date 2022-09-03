@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+@each $type, $keys in $fonts {
+  @if $type == fs {
+    @each $key, $value in $keys {
+      .#{$type}-#{$key} {
+        font-size: var(--#{$type}-#{$key});
+      }
+    }
+  }
+
+  @if $type == ff {
+    @each $key, $value in $keys {
+      .#{$type}-#{$key} {
+        font-family: var(--#{$type}-#{$key});
+      }
+    }
+  }
+
+  @if $type == fw {
+    @each $key, $value in $keys {
+      .#{$type}-#{$key} {
+        font-weight: var(--#{$type}-#{$key});
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+
+  & :is(h1, h2, h3, p, blockquote:not([class])) {
+    margin-inline: auto;
+  }
+}
+
+:is(h1, h2, h3, p, blockquote:not([class])).text-center {
+  margin-inline: auto;
+}

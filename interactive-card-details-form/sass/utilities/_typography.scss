@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.text-center {
+  text-align: center;
+
+  & :is(h1, h2, h3, p, li) {
+    margin-inline: auto;
+  }
+}
+
+:is(h1, h2, h3, p, li).text-center {
+  margin-inline: auto;
+}

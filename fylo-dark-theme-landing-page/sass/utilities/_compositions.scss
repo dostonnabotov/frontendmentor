@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.container {
+  --max-width: 70rem;
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.region {
+  padding-top: var(--region-space, var(--size-800));
+  padding-bottom: var(--region-space, var(--size-800));
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, var(--size-400));
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, var(--size-400));
+  align-items: start;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, var(--size-400));
+}
+
+.grid[data-grid-layout="responsive"] {
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fill),
+    minmax(var(--grid-min-item-size, 16rem), 1fr)
+  );
+}
+
+.grid[data-layout="50-50"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 26rem);
+}
+
+[data-align="center"] {
+  align-items: center;
+}

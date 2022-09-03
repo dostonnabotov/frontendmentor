@@ -2,6 +2,7 @@
 
 ## Links
 
+- [fylo dark theme landing page](https://dostonnabotov.github.io/frontendmentor/fylo-dark-theme-landing-page/)
 - [social media dashboard](https://dostonnabotov.github.io/frontendmentor/social-media-dashboard/)
 - [advice generator app](https://dostonnabotov.github.io/frontendmentor/advice-generator/)
 - [4 card feature section](https://dostonnabotov.github.io/frontendmentor/4-card-feature-section/)

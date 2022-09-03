@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.cards {
+  --gap: var(--size-700);
+
+  li {
+    max-width: unset;
+  }
+
+  p {
+    max-width: 45ch;
+  }
+}

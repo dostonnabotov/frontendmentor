@@ -1,0 +1,26 @@
+body {
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-accent);
+
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-400);
+}
+
+.logo {
+  height: clamp(4ex, 4vw, 6ex);
+  width: auto;
+  flex: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-700);
+  color: var(--clr-neutral-100);
+}

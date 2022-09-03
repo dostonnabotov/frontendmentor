@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+.testimonials {
+  --grid-placement: auto-fill;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+  --gap: var(--size-600);
+  padding-bottom: var(--size-500);
+
+  position: relative;
+  isolation: isolate;
+
+  // quote image
+  &::before {
+    position: absolute;
+    content: "";
+    top: 1rem;
+    left: 0.5rem;
+    background-image: url("../assets/images/bg-quotes.png");
+    background-repeat: no-repeat;
+    width: 4rem;
+    aspect-ratio: 1;
+    z-index: -1;
+  }
+
+  @include mq("md") {
+    &::before {
+      top: 1.5rem;
+      left: -0.5rem;
+    }
+  }
+}
+
+.testimonial {
+  --flow-space: var(--size-500);
+  --gap: var(--size-200);
+  max-width: unset;
+  padding: var(--size-600) var(--size-500);
+  background-color: var(--clr-neutral-600);
+  border-radius: var(--size-200);
+
+  & img {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+}

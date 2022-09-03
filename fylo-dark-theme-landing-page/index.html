@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Fylo dark theme landing page</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- custom js -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header data-role="primary">
+      <div class="container region">
+        <div class="primary-header | flex" data-align="center">
+          <img class="logo" src="./assets/images/logo.svg" alt="Fylo brand" />
+          <nav aria-label="primary header navigation">
+            <ul role="list" class="flex">
+              <li><a href="javascript:void(0)">Features</a></li>
+              <li><a href="javascript:void(0)">Team</a></li>
+              <li><a href="javascript:void(0)">Sign In</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container region flow | text-center">
+        <img
+          class="mx-auto"
+          src="./assets/images/illustration-intro.png"
+          alt="Intro Illustration"
+        />
+        <h1 class="fs-900">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="fs-500">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <a class="btn" href="javascript:void(0)">Get started</a>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="container region">
+        <ul
+          role="list"
+          class="grid | text-center"
+          data-layout="50-50"
+          data-grid-layout="responsive"
+        >
+          <li class="flow">
+            <img
+              aria-hidden="true"
+              class="mx-auto"
+              src="./assets/images/icon-access-anywhere.svg"
+              alt=""
+            />
+            <h3 class="fs-600">Access your files, anywhere</h3>
+            <p>
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </li>
+          <li class="flow">
+            <img
+              aria-hidden="true"
+              class="mx-auto"
+              src="./assets/images/icon-security.svg"
+              alt=""
+            />
+            <h3 class="fs-600">Security you can trust</h3>
+            <p>
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </li>
+          <li class="flow">
+            <img
+              aria-hidden="true"
+              class="mx-auto"
+              src="./assets/images/icon-collaboration.svg"
+              alt=""
+            />
+            <h3 class="fs-600">Real-time collaboration</h3>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </li>
+          <li class="flow">
+            <img
+              aria-hidden="true"
+              class="mx-auto"
+              src="./assets/images/icon-any-file.svg"
+              alt=""
+            />
+            <h3 class="fs-600">Store any type of file</h3>
+            <p>
+              hether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container region">
+        <div
+          class="grid"
+          data-grid-layout="responsive"
+          data-align="center"
+          data-layout="50-50"
+          style="--gap: var(--size-800)"
+        >
+          <div>
+            <img
+              aria-hidden="true"
+              src="./assets/images/illustration-stay-productive.png"
+              alt=""
+            />
+          </div>
+          <div class="flow">
+            <h2 class="fs-900">Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <a class="fs-500 | custom-link" href="javascript:void(0)"
+              >See how Fylo works <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="testimonials container region">
+        <ul role="list" class="grid" data-grid-layout="responsive">
+          <li class="testimonial flow">
+            <blockquote>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </blockquote>
+            <div class="flex" data-align="center">
+              <img src="./assets/images/profile-1.jpg" alt="Satish Patel" />
+              <div>
+                <p class="fw-700">Satish Patel</p>
+                <p class="fs-300">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+          <li class="testimonial flow">
+            <blockquote>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </blockquote>
+            <div class="flex" data-align="center">
+              <img src="./assets/images/profile-2.jpg" alt="Bruce McKenzie" />
+              <div>
+                <p class="fw-700">Bruce McKenzie</p>
+                <p class="fs-300">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+          <li class="testimonial flow">
+            <blockquote>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </blockquote>
+            <div class="flex" data-align="center">
+              <img src="./assets/images/profile-3.jpg" alt="Iva Boyd" />
+              <div>
+                <p class="fw-700">Iva Boyd</p>
+                <p class="fs-300">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-container">
+      <div class="container region">
+        <div class="cta | flow | text-center">
+          <h2 class="fs-800">Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <form class="cta__form" id="cta-form">
+            <div class="cta__input-group | grid">
+              <label for="cta-email" class="sr-only">
+                Enter your email address
+              </label>
+              <input
+                type="email"
+                id="cta-email"
+                class="cta__email-input"
+                placeholder="email@example.com"
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                title="Enter valid email address"
+                required
+              />
+              <button type="submit" class="cta__email-submit | btn">
+                Get Started For Free
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer data-role="primary">
+      <div class="container region">
+        <img class="logo" src="./assets/images/logo.svg" alt="Fylo brand" />
+        <div class="primary-footer region | grid">
+          <div class="primary-footer__location | flex">
+            <img
+              aria-hidden="true"
+              src="./assets/images/icon-location.svg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <ul role="list" class="primary-footer__contact | flow">
+            <li class="flex">
+              <img
+                aria-hidden="true"
+                src="./assets/images/icon-phone.svg"
+                alt=""
+              />
+              <a href="tel:15431234567">+1-543-123-4567</a>
+            </li>
+            <li class="flex">
+              <img
+                aria-hidden="true"
+                src="./assets/images/icon-email.svg"
+                alt=""
+              />
+              <a href="mailto:example@fylo.com">example@fylo.com</a>
+            </li>
+          </ul>
+          <nav
+            class="primary-footer__links | grid"
+            aria-label="primary footer navigation"
+          >
+            <ul role="list" class="flex">
+              <li><a href="javascript:void(0)">About Us</a></li>
+              <li><a href="javascript:void(0)">Jobs</a></li>
+              <li><a href="javascript:void(0)">Press</a></li>
+              <li><a href="javascript:void(0)">Blog</a></li>
+            </ul>
+            <ul role="list" class="flex">
+              <li><a href="javascript:void(0)">Contact Us</a></li>
+              <li><a href="javascript:void(0)">Terms</a></li>
+              <li><a href="javascript:void(0)">Privacy</a></li>
+            </ul>
+          </nav>
+          <ul
+            role="list"
+            class="primary-footer__social | flex"
+            aria-label="Follow us on Social Media"
+          >
+            <li>
+              <a
+                href="javascript:void(0)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Facebook</span>
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Twitter</span>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="sr-only">Instagram</span>
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

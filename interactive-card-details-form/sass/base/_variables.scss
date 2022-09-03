@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+:root {
+  --ff-body: "Space Grotesk", sans-serif;
+  --fs-400: 1rem;
+
+  @each $name, $sizes in $colors {
+    @each $key, $value in $sizes {
+      --clr-#{$name}-#{$key}: #{$value};
+    }
+  }
+
+  @each $key, $value in $sizes {
+    --size-#{$key}: #{$value};
+  }
+
+  @include mq("md") {
+    --fs-400: 1.125rem;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+/* =================
+  Root
+================== */
+:root {
+  /* typography */
+  @each $type, $keys in $fonts {
+    @each $key, $value in $keys {
+      --#{$type}-#{$key}: #{$value};
+    }
+  }
+
+  /* colors */
+  @each $type, $keys in $colors {
+    @each $key, $value in $keys {
+      --clr-#{$type}-#{$key}: #{$value};
+    }
+  }
+
+  /* sizes */
+  @each $key, $value in $sizes {
+    --size-#{$key}: #{$value};
+  }
+}

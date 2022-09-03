@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.grid {
+  display: grid;
+  gap: var(--gap, var(--size-400));
+}
+
+.grid[data-layout="responsive"] {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--grid-min-item-size, 16rem), 1fr)
+  );
+}
+
+@include mq("md") {
+  .grid[data-layout="50-50"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

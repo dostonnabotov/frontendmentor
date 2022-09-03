@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.bg-custom-image {
+  --bg-image: url("/assets/images/bg-main-desktop.png");
+  --_width: 100%;
+  --_height: 15rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+.bg-custom-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: var(--_width);
+  height: var(--_height);
+  z-index: -1;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mq("md") {
+    --_width: 30%;
+    --_height: 100%;
+  }
+}

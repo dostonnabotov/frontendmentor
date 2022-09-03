@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+  gap: var(--gap, var(--size-400));
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+$columns: 12;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 calc(100% / (12 / $i));
+  }
+}

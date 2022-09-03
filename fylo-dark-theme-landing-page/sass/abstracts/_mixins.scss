@@ -1,0 +1,5 @@
+@mixin state {
+  &:is(:hover, :focus) {
+    @content;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+header[data-role="primary"] {
+  --region-space: var(--size-500);
+  --gap: var(--size-500);
+  background-color: var(--clr-neutral-700);
+}
+
+.primary-header {
+  justify-content: space-between;
+
+  & a {
+    @include state {
+      text-decoration: underline;
+      color: var(--clr-neutral-100);
+    }
+  }
+}

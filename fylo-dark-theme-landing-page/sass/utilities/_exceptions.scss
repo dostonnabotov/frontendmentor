@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.mx-auto {
+  width: var(--mx-auto-width, fit-content);
+  margin-inline: auto;
+}
+
+.custom-link {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  color: var(--clr-primary-400);
+
+  & i {
+    margin-left: 0.5em;
+    transition: transform 250ms ease-in-out;
+  }
+
+  @include state {
+    color: var(--clr-neutral-100);
+
+    & i {
+      transform: translateX(20%);
+    }
+  }
+}
